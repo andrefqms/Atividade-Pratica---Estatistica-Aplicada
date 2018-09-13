@@ -1,0 +1,336 @@
+#questao 2
+pois = 0
+medias = 0
+variances = 0
+for (i in 1:1000) {
+dist = rpois(100,10)
+medias[i] = mean(dist)
+variances[i] = var(dist)
+}
+hist(medias,col = 5)
+hist(variances, col =6)
+hist(medias,col = 5)
+#questao 1
+tam_populacao = 100
+dados = rep(1, tam_populacao)
+for (i in 1:25) {
+dados[i] = 0
+}
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+#questao 1
+tam_populacao = 100
+dados = rep(1, tam_populacao)
+for (i in 1:25) {
+dados[i] = 0
+}
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+hist(media10)
+hist(media10)
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+hist(media)
+media_variancias = mean(variancias)
+hist(media)
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+hist(med)
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+hist(media10)
+me = 30
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+variancia30 = var(varian)
+media_variancias30 = mean(varian)
+me = 30
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+me = 30
+medi = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+variancia30 = var(varian)
+media_variancias30 = mean(varian)
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+hist(med)
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+me = 30
+medi = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+variancia30 = var(varian)
+media_variancias30 = mean(varian)
+#questao 1
+tam_populacao = 100
+dados = rep(1, tam_populacao)
+for (i in 1:25) {
+dados[i] = 0
+}
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+hist(med)
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+me = 30
+medi = rep(0, 1000)
+varian = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+variancia30 = var(varian)
+media_variancias30 = mean(varian)
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+hist(variancias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+hist(med)
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+hist(varia)
+me = 30
+hist(varia)
+media_variancias10 = mean(varia)
+hist(varia)
+me = 30
+medi = rep(0, 1000)
+varian = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=me, replace=FALSE)
+medi[j] = mean(vetor)
+varian[j] = var(vetor)
+}
+hist(medi)
+media30 = mean(medi)
+variancia30 = var(varian)
+media_variancias30 = mean(varian)
+hist(varian)
+media_variancias30 = mean(varian)
+hist(varian)
+media_variancias10 = mean(varia)
+hist(varia)
+dados[i] = 0
+for (i in 1:25) {
+dados[i] = 0
+}
+# amostras
+k = 1000
+n = 50
+medias = rep(0, 1000)
+variancias = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+hist(variancias)
+m = 10
+med = rep(0, 1000)
+varia = rep(0, 1000)
+for (j in 1:k) {
+vetor = sample(dados, size=m, replace=FALSE)
+med[j] = mean(vetor)
+varia[j] = var(vetor)
+}
+hist(med)
+media10 = mean(med)
+variancia10 = var(varia)
+media_variancias10 = mean(varia)
+hist(varia)
+for (j in 1:k) {
+vetor = sample(dados, size=n, replace=FALSE)
+medias[j] = mean(vetor)
+variancias[j] = var(vetor)
+}
+hist(medias)
+media = mean(medias)
+variancia = var(variancias)
+media_variancias = mean(variancias)
+hist(variancias)
+m = 10
+med = rep(0, 1000)
+#questao 3
+expon = 0
+for (i in 1:1000) {
+di = rexp(100,5)
+t = 1/mean(di)
+expon[i] = t
+}
+hist(expon)
+#questao 3
+expon = 0
+for (i in 1:1000) {
+di = rexp(100,5)
+t = 1/mean(di)
+expon[i] = t
+}
+hist(expon)
+#questao 3
+expon = 0
+for (i in 1:1000) {
+di = rexp(100,5)
+t = 1/mean(di)
+expon[i] = t
+}
+hist(expon)

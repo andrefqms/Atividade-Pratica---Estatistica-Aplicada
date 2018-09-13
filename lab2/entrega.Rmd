@@ -1,0 +1,62 @@
+---
+title: "Segundo Laboratorio de Estatistica Aplicada"
+author: "Andre Filipe Queiroz de Melo e Soares"
+date: "5 de setembro de 2018"
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Questao 1
+
+
+```{r }
+m <- 8000         
+a <- 1           
+c <- 5         
+s <- 67       
+vetor <- numeric()  
+vetor[1] <- s        
+for (i in 2:10000)
+{
+  vetor[i] <- (a * vetor[i-1] + c) %% m
+}
+u = vetor / m
+hist(u,main = "Histograma de 1000 numeros", col = "blue",xlab = "Vetor dividido por M",ylab = "Frequencia")
+
+```
+
+## Questao 2
+
+
+```{r}
+dados = -(log(1-u))/10
+hist(dados,main = "Histograma associado aos dados",col = "green",border = "black")
+```
+
+## Questao 3
+
+```{r}
+
+poisson <- rpois(1000,5)
+hist(poisson,main = "Histograma dos valores", col = "blue",border = "white")
+
+```
+
+## Questao 4
+```{r}
+
+vetor = rnorm(1000,100*5,100*1)
+
+
+hist(vetor,main = "Histograma associado a 1000 valores", col = "red",border = "white")
+
+
+
+```
