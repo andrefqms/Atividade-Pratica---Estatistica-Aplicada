@@ -1,1 +1,1 @@
-# Atividade-Pratica---Estatistica-Aplicada
+# Atividades com R - Estatistica Aplicada
