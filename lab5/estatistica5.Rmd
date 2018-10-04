@@ -1,0 +1,128 @@
+---
+title: "Atividade Pratica 5 - Estatistica Aplicada"
+author: "André Filipe Queiroz de Melo e Soares"
+date: "3 de Outubro de 2018"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##QUESTÃO 1
+
+
+
+#Letra A
+
+```{r}
+#P é a proporção populacional dos eleitores favoráveis:
+
+p = 522.097/(522.097+720.991)
+print(p)
+
+```
+
+#Letra B
+
+
+#I)
+```{r}
+
+
+
+total = 1243088
+dados = rep(0, total)
+for (i in 1:522097) {
+  dados[i] = 1
+}
+
+p1 = 522097/total
+prop2 = 720991/total
+n = 2200
+k = 100
+vetor = numeric(100)
+
+for (i in 1:k) {
+  amostragem = sample(dados, n, replace=FALSE)
+  proporcao = 0
+  for (j in 1:n) {
+    proporcao = proporcao + amostragem[j]
+  }
+  vetor[i] = proporcao/n
+  media = mean(amostragem)
+  formula = (p1 * (1 - p1))/n
+  formula = formula * 1.96
+  erro = sqrt(formula)
+  ic_soma = media + erro
+  ic_diminui = media - erro
+}
+
+hist(vetor,col = "dark blue",border = "white")
+
+
+
+```
+
+
+
+#II)
+```{r}
+
+
+
+
+total = 1243088
+dados = rep(0, total)
+for (i in 1:522097) {
+  dados[i] = 1
+}
+
+p1 = 522097/total
+prop2 = 720991/total
+n = 2200
+k = 1000
+vetor = numeric(100)
+
+for (i in 1:k) {
+  amostragem = sample(dados, n, replace=FALSE)
+  proporcao = 0
+  for (j in 1:n) {
+    proporcao = proporcao + amostragem[j]
+  }
+  vetor[i] = proporcao/n
+  media = mean(amostragem)
+  formula = (p1 * (1 - p1))/n
+  formula = formula * 1.96
+  erro = sqrt(formula)
+  ic_soma = media + erro
+  ic_diminui = media - erro
+}
+
+hist(vetor,col = "dark red",border = "white")
+
+
+
+
+
+#Ao compararmos os dois gráficos vemos que o segundo grafico se concentra mais no valor da proporção populacional, devido ao centro que onde é mais "alto" porque ali se encontram a maior parte dos resultados, de forma que neste teste vemos aqui o quanto os resultados são convergentes nesse entorno.
+
+
+```
+
+
+
+#Letra C
+```{r}
+#Sim, pois para ser representativa, ela precisa ser aleatória, estar associada a um determinado nível de confiança e a uma margem de erro e que  partir de um cálculo que será consideado a margem de erro (a variação possível em torno do resultado) e o nível de confiança
+```
+
+
+
+
+#Letra D
+```{r}
+#Intervalos de confiança são usados para indicar a confiabilidade de uma estimativa. Por exemplo,se tivermos um IC que pode ser usado para descrever o quanto os resultados de uma pesquisa são confiáveis. Sendo todas as estimativas iguais, uma pesquisa que resulte num IC pequeno é mais confiável do que uma que resulte num IC maior. Se por acaso, Aumentar o tamanho (amplitude) do intervalo de confiança, significa reduzir a precisão da estimativa por intervalo. Para aumentar a precisão da estimativa temos que reduzir o tamanho (amplitude) do intervalo. Assim, a amplitude do intervalo está associada a incerteza que temos a respeito do parâmetro.
+
+```
