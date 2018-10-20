@@ -1,0 +1,114 @@
+---
+title: "Atividade pratica 6- Estatisca Aplicada"
+author: "André Filipe Queiroz de Melo e Soares"
+date: "17 de Outubro de 2018"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## QUESTÃO 1
+
+
+#A)
+```{r}
+
+#A)
+total = (650135 + 592953)
+p = 650135/total
+
+print(p)
+
+#proporção populacional de eleitores favoráaveis ao candidato “A” é de 52,3%
+```
+
+#B)
+
+
+#i)
+
+```{r }
+#B)
+total = (650135 + 592953)
+
+p = 650135/total
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+
+
+pro = 650135
+contra = 592953
+
+pop = 0
+for (i in 1:pro) {
+  pop[i] = 1
+}
+for (i in pro+1:total) {
+  pop[i] = 0
+}
+
+atrib = sample(pop,25,replace = FALSE)
+media = mean(atrib)
+
+
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+
+print(paste0("RC =[" ,limiteSuperior,"; infinito]"))
+#-----------------------------------------------
+
+atrib2 = sample(pop,100,replace = FALSE)
+media2 = mean(atrib)
+limiteSuperior2 = p + (zgama *sqrt(p*(1-p)/100))
+
+print(paste0("RC =[" ,limiteSuperior2,"; infinito]"))
+
+
+#-----------------------------------------------
+
+
+
+atrib3 = sample(pop,2200,replace = FALSE)
+media3 = mean(atrib)
+
+
+limiteSuperio3r = p + (zgama *sqrt(p*(1-p)/2200))
+
+print(paste0("RC =[" ,limiteSuperior,"; + infinito]"))
+
+```
+
+
+
+
+#ii)
+
+```{r }
+#Sim, pois o objetivo do teste de hipoteses é decidir se a hipotese Ho é ou nao aceitaveil. Essa decisão é baseada em estatistica que atraves de uma regiao, que chamaremos de Regiao critica (RC).Numa amostra pequena  devido que uma pesquisa que resulte num IC pequeno é mais confiável do que uma que resulte num IC maior
+```
+
+#QUESTÃO 2
+
+#i)
+```{r }
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96, 
+             78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88, 
+             72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+
+rc = 75 + 1.714 * (var(amostra)/sqrt(24))
+print(paste0("Região critica feita feita manualmente  = ",rc)) 
+mean(amostra)
+
+print(t.test(amostra))
+```
+
+
+#i)
+```{r }
+#Tendo Ho como 75 kg, vemos que na no resultado anterior que a regiao critica a qual definimos como unilateral a direita é sendo R.C.= [77.72; + infinito]. Logo, Aceitamos Ho, pois se encontra fora da regiao critica, sendo o peso medio dos homens aceitavel
+```

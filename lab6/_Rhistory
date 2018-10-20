@@ -1,0 +1,355 @@
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+print(atrib)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+z=qnorm(1-gama)
+print(z)
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+limiteInferior = p - (zgama *(sqrt(p*(1-p))/media))
+limiteSUperior = p + (zgama *(sqrt(p*(1-p))/media))
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+limiteSUperior = p + (zgama *(sqrt(p*(1-p))/media))
+limiteSUperior = media + (zgama *(var(atrib)/sqrt(25)))
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+limiteInferior = p - (zgama *(sqrt(p*(1-p))/media))
+limiteSUperior = p + (zgama *(sqrt(p*(1-p))/media))
+amostra <- c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.7141 * (var(amostra)/sqrt(24))
+favor = vector()
+rc2 = 75 - 1.7141  * (var(amostra)/sqrt(24))
+limiteInferior = p - (zgama *(sqrt(p*(1-p))/25))
+limiteSUperior = p + (zgama *(sqrt(p*(1-p))/25))
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+s = media/ total
+limiteInferior = p - (zgama *sqrt(p*(1-p))/25)
+limiteSUperior = p + (zgama *sqrt(p*(1-p))/25)
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+s = media/ pro
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+s = media/ pro
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+s = limiteInferior + limiteSuperior
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *(sqrt(p*(1-p)/25)))
+t.test(amostra)
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.7141 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.7141  * (var(amostra)/sqrt(24))
+t.test(amostra)
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.7141 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.7141  * (var(amostra)/sqrt(24))
+t.test(amostra)
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.7141 * (var(amostra)/sqrt(23))
+mean(amostra)
+rc2 = 75 - 1.7141  * (var(amostra)/sqrt(23))
+t.test(amostra)
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+p.test()
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.7141 * (var(amostra)/sqrt(23))
+mean(amostra)
+rc2 = 75 - 1.7141  * (var(amostra)/sqrt(23))
+t.test(amostra)
+rc = 75 + 1.72 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.72 * (var(amostra)/sqrt(24))
+t.test(amostra)
+rc = 75 + 1.714 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.714  * (var(amostra)/sqrt(24))
+t.test(amostra)
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 2.069 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.714  * (var(amostra)/sqrt(24))
+t.test(amostra)
+rc = 75 + 2.069 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 2.069  * (var(amostra)/sqrt(24))
+t.test(amostra)
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.714 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.714  * (var(amostra)/sqrt(24))
+t.test(amostra)
+vc =  75 + 1.96 * (var(amostra)/sqrt(24))
+vc =  75 - 1.96 * (var(amostra)/sqrt(24))
+t.test(amostra,alternative = "less")
+t.test(amostra,alternative = "greater")
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+favor = vector()
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = vector()
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+pro = 650135
+contra = 592953
+favor = 0
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = 0
+for (i in pro+1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+pro = 650135
+contra = 592953
+favor = 0
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = 0
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+favor = 0
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = 0
+for (i in 1:contra) {
+contrario[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+pro = 650135
+contra = 592953
+favor = 0
+for (i in 1:pro) {
+favor[i] = 1
+}
+contrario = 0
+for (i in 1:contra) {
+contrario[pro+1] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+a = 650135
+b = 592953
+pop = 0
+for (i in 1:a) {
+pop = 1
+}
+for (i in 1:b) {
+pop[a+1] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+a = 650135
+b = 592953
+pop = 0
+for (i in 1:a) {
+pop = 1
+}
+for (i in 1:b) {
+pop[a+1] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+atrib = sample(pop,25,replace = FALSE)
+media = mean(atrib)
+atrib = sample(pop,25,replace = FALSE)
+media = mean(atrib)
+pro = 650135
+contra = 592953
+pop = 0
+for (i in 1:pro) {
+pop[i] = 1
+}
+for (i in pro+1:total) {
+pop[i] = 0
+}
+atrib = sample(pro,25,replace = FALSE)
+media = mean(atrib)
+pro = 650135
+contra = 592953
+pop = 0
+for (i in 1:pro) {
+pop[i] = 1
+}
+for (i in pro+1:total) {
+pop[i] = 0
+}
+atrib = sample(pop,25,replace = FALSE)
+media = mean(atrib)
+total = (650135 + 592953)
+p = 650135/total
+print(p)
+significancia = 0.05
+gama = 0.95
+zgama = 1.96
+pro = 650135
+contra = 592953
+pop = 0
+for (i in 1:pro) {
+pop[i] = 1
+}
+for (i in pro+1:total) {
+pop[i] = 0
+}
+atrib = sample(pop,25,replace = FALSE)
+media = mean(atrib)
+limiteInferior = p - (zgama *sqrt(p*(1-p)/25))
+limiteSuperior = p + (zgama *sqrt(p*(1-p)/25))
+# a)
+amostra = c(72.31, 77.49, 77.15, 74.62, 74.17, 75.71, 77.10, 76.16, 76.96,
+78.33, 77.86, 77.51, 79.22, 73.50, 75.16, 80.16, 73.59, 69.88,
+72.68, 72.61, 74.71, 73.49, 81.71, 73.72)
+rc = 75 + 1.714 * (var(amostra)/sqrt(24))
+mean(amostra)
+rc2 = 75 - 1.714  * (var(amostra)/sqrt(24))
+t.test(amostra)
+#b)
+#b)
+knitr::opts_chunk$set(echo = TRUE)
+#A)
+p = 650135/total
+print(p)
+#propor ̧c ̃ao populacional de eleitores favor ́aveis ao candidato “A” é de
