@@ -1,0 +1,138 @@
+---
+title: "Atividade Pratica 8 de Estatistica Aplicada"
+author: "Andre Filipe Queiroz de Melo e Soares"
+date: "14 de novembro de 2018"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# QUESTÃO 1
+
+#A)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+
+#QUESTAO 1
+#A)
+graf = plot(volume.de.trafego,velocidade.media,pch = 1)
+
+
+```
+
+
+#B)
+```{r}
+
+#B)O gráfico de dispersão pode ser usado quando uma variável depende de outra variável 
+#ou quando as duas variáveis são independentes.O gráfico de dispersão também 
+#é útil para verificar como dois conjuntos de dados comparáveis 
+#concordam entre si em que nesse caso mostra variáveis estao fracamente relacionadas. 
+
+```
+
+
+#C)
+```{r}
+#C)
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+correlacao = cor(x = velocidade.media,y = volume.de.trafego,method = "pearson")
+print(correlacao)
+
+#Como r é proximo de -1, temos um relacionamento forte e como r 
+#é negativo, o r tem sentido descrecente.
+```
+
+
+#D)
+```{r}
+#D)
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+modelo = lm(velocidade.media~volume.de.trafego)
+coef(modelo)
+print(summary(modelo))
+
+```
+
+
+#E)
+```{r}
+#E)
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+graf = plot(volume.de.trafego,velocidade.media,pch = 1)
+abline(lm(velocidade.media~volume.de.trafego), col="black")
+
+```
+
+
+# QUESTAO 2
+
+
+#A)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+#A)
+graf = plot(volume.de.trafego,velocidade.media,pch = 1)
+abline(lm(velocidade.media~volume.de.trafego), col="black")
+```
+
+
+#B)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+correlacao = cor(volume.de.trafego**volume.de.trafego,velocidade.media,method = "pearson")
+print(correlacao)
+plot(volume.de.trafego**volume.de.trafego,velocidade.media,pch = 1)
+```
+
+
+#C)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+correlacao = cor(log(volume.de.trafego),velocidade.media,method = "pearson")
+print(correlacao)
+plot(log(volume.de.trafego),velocidade.media,pch = 1)
+abline(lm(velocidade.media~log(volume.de.trafego)), col="dark blue")
+```
+
+
+#D)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+correlacao = cor(sqrt(volume.de.trafego),velocidade.media,method = "pearson")
+print(correlacao)
+plot(sqrt(volume.de.trafego),velocidade.media,pch = 1)
+abline(lm(velocidade.media~sqrt(volume.de.trafego)), col="dark green")
+```
+
+
+#E)
+```{r}
+dados <- read.csv("planilha.csv", header=TRUE,sep=",",dec=".")
+
+attach(dados)
+correlacao = cor(1/sqrt(volume.de.trafego),velocidade.media,method = "pearson")
+print(correlacao)
+plot(1/sqrt(volume.de.trafego),velocidade.media,pch = 1)
+abline(lm(velocidade.media~(1/sqrt(volume.de.trafego))), col="dark red")
+```
